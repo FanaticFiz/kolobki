@@ -1,0 +1,18 @@
+.Square {
+  display: grid;
+  align-content: center;
+
+  border: 1px solid #999;
+
+  height: 50px;
+  width: 50px;
+
+  margin-right: -1px;
+  margin-top: -1px;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}

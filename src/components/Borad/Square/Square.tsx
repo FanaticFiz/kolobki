@@ -8,7 +8,7 @@ interface SquareProps {
   value: boolean;
   i: number;
   j: number;
-  onChange: (i: number, j: number) => void;
+  onClick: (i: number, j: number) => void;
 }
 
 export class Square extends React.Component<SquareProps> {
@@ -28,7 +28,6 @@ export class Square extends React.Component<SquareProps> {
   }
 
   private handleClick() {
-    this.props.onChange(this.props.i, this.props.j);
+    this.props.onClick(this.props.i, this.props.j);
   }
-
 }
